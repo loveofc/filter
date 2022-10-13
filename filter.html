@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <link rel="stylesheet" type="text/css" href="filter.css">
+    
+</head>
+<body>
+    <canvas id="canvas"></canvas><br/>
+    <input id="img" type="file" accept="image/*"><br/>
+    <input id="invert" type="button" value="invert"><br/>
+    <input id ="grayBtn"type="button" value="흑백전환"><br/>
+    <input id ="sepia"type="button" value="sepia전환"><br/>
+    <div class="slidecontainer">
+        <h5>밝기 조정</h5>
+        <input type="range" min="1" max="100" value="0" class="slider" id="myRange"><br/>        
+    </div>
+    <input type="button" value="원상복구" id="reset">    
+    <script src="filter.js"></script>
+</body>
+</html>
